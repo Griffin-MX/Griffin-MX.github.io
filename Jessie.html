@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baby shark</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+<div data-magellan-expedition="fixed">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Baby shark</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left">
+      <li data-magellan-arrival="page1"><a href="#page1">VVVIP Black Card</a></li>
+      <li data-magellan-arrival="page2"><a href="#page2">余额</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<div style="padding:20px;height:1500px;">
+  <h3>鲨鲨银行欢迎您！</h3>
+  <p>向下滚动页面查看您的账户详情。</p>
+
+<div style="height:200px;background-color:#1abc9c;color:white;">
+  <h3 data-magellan-destination="page1">Your VVVIP Card</h3>
+  <a name="page1"></a>
+  <p>待激活，请联系网点银行业务员。</p>
+  <a href="visa.png" target="_blank" class="th radius">
+    <img src="visa.png" alt="Paris" width="80" height="60">
+  </a>
+</div>
+
+<h3 data-magellan-destination="page2">余额</h3>
+<a name="page2"></a>
+<p>持卡人：<b>夏*斯</b>   当前可用金额：￥ 999,999,999,999,999,999.99</p>
+	<p>待还款金额：￥ 0.00</p>
+</div>
+
+<!-- 初始化 Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+</html>
