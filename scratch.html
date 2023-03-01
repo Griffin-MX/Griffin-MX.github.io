@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+	<title>鲨鲨刮刮乐</title>
+</head>
+<body>
+    <div class="container mt-3">
+    <h1>鲨鲨刮刮乐</h1>
+    <canvas id="underCanvas" width=300 height=300 style="position: absolute; left: 0;top: 0;"></canvas>
+    <canvas id="upCanvas" width=300 height=300 style="position: absolute; left: 0; top: 0;"></canvas>
+    <script src="./scratch.js"></script>
+    <script>
+        // 可能变化的值放在options中，方便修改
+        var options = {
+            text: {
+                fontWeight: "bold",
+                fontSize: 30,
+                fontFamily: "Arial",
+                align: "center",
+                color: '#F60'
+            },
+            maskColor: "gray",
+            radius: 20,
+            awards: ["百万大奖", "100元奖金", "10元奖金", "谢谢参与！"]
+        };
+
+        new Scratch(options).init();
+    </script>
+
+<a href="https://griffin-mx.github.io/Jessie.html" class="btn btn-secondary" >返回</a>
+<button type="button" class="btn btn-success" onclick="location.reload ();">再来一次</button>
+    </div>
+</body>
+</html>
